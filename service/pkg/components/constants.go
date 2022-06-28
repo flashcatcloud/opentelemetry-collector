@@ -12,6 +12,15 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-// Package builder handles the options to build the OpenTelemetry collector
-// pipeline.
-package builder // import "go.opentelemetry.io/collector/service/internal/builder"
+package components // import "go.opentelemetry.io/collector/service/pkg/components"
+
+const (
+	ZapKindKey       = "kind"
+	ZapKindReceiver  = "receiver"
+	ZapKindProcessor = "processor"
+	ZapKindExporter  = "exporter"
+	ZapKindExtension = "extension"
+	ZapKindPipeline  = "pipeline"
+	ZapNameKey       = "name"
+	ZapDataTypeKey   = "data_type"
+)

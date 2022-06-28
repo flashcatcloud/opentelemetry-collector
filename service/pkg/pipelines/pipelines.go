@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package pipelines // import "go.opentelemetry.io/collector/service/internal/pipelines"
+package pipelines // import "go.opentelemetry.io/collector/service/pkg/pipelines"
 
 import (
 	"context"
@@ -26,9 +26,9 @@ import (
 	"go.opentelemetry.io/collector/component"
 	"go.opentelemetry.io/collector/config"
 	"go.opentelemetry.io/collector/consumer"
-	"go.opentelemetry.io/collector/service/internal/components"
-	"go.opentelemetry.io/collector/service/internal/fanoutconsumer"
-	"go.opentelemetry.io/collector/service/internal/zpages"
+	"go.opentelemetry.io/collector/service/pkg/components"
+	"go.opentelemetry.io/collector/service/pkg/fanoutconsumer"
+	"go.opentelemetry.io/collector/service/pkg/zpages"
 )
 
 const (

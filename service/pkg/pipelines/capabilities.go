@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package pipelines // import "go.opentelemetry.io/collector/service/internal/pipelines"
+package pipelines // import "go.opentelemetry.io/collector/service/pkg/pipelines"
 
 import (
 	"go.opentelemetry.io/collector/consumer"

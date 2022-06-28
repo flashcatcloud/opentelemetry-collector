@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package zpages // import "go.opentelemetry.io/collector/service/internal/zpages"
+package zpages // import "go.opentelemetry.io/collector/service/pkg/zpages"
 
 import (
 	_ "embed"

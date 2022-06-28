@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package extensions // import "go.opentelemetry.io/collector/service/internal/extensions"
+package extensions // import "go.opentelemetry.io/collector/service/pkg/extensions"
 
 import (
 	"context"
@@ -25,8 +25,8 @@ import (
 
 	"go.opentelemetry.io/collector/component"
 	"go.opentelemetry.io/collector/config"
-	"go.opentelemetry.io/collector/service/internal/components"
-	"go.opentelemetry.io/collector/service/internal/zpages"
+	"go.opentelemetry.io/collector/service/pkg/components"
+	"go.opentelemetry.io/collector/service/pkg/zpages"
 )
 
 const zExtensionName = "zextensionname"

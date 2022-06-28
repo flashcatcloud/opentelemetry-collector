@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package telemetrylogs // import "go.opentelemetry.io/collector/service/internal/telemetrylogs"
+package telemetrylogs // import "go.opentelemetry.io/collector/service/pkg/telemetrylogs"
 
 import (
 	"go.uber.org/zap"

@@ -26,7 +26,7 @@ import (
 	"go.opentelemetry.io/collector/component/componenttest"
 	"go.opentelemetry.io/collector/config"
 	"go.opentelemetry.io/collector/confmap/confmaptest"
-	"go.opentelemetry.io/collector/service/internal/configunmarshaler"
+	"go.opentelemetry.io/collector/service/pkg/configunmarshaler"
 )
 
 func TestService_GetFactory(t *testing.T) {

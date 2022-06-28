@@ -12,7 +12,7 @@
 // See the License for the specific language governing permissions and
 // limitations under the License.
 
-package components // import "go.opentelemetry.io/collector/service/internal/components"
+package components // import "go.opentelemetry.io/collector/service/pkg/components"
 
 import (
 	"net/http"

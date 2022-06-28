@@ -40,7 +40,7 @@ import (
 	"go.opentelemetry.io/collector/processor/batchprocessor"
 	semconv "go.opentelemetry.io/collector/semconv/v1.5.0"
 	"go.opentelemetry.io/collector/service/featuregate"
-	"go.opentelemetry.io/collector/service/internal/telemetry"
+	"go.opentelemetry.io/collector/service/pkg/telemetry"
 )
 
 // collectorTelemetry is collector's own telemetry.

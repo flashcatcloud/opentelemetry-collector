@@ -23,10 +23,10 @@ import (
 	"go.uber.org/multierr"
 
 	"go.opentelemetry.io/collector/component"
-	"go.opentelemetry.io/collector/service/internal"
-	"go.opentelemetry.io/collector/service/internal/extensions"
-	"go.opentelemetry.io/collector/service/internal/pipelines"
-	"go.opentelemetry.io/collector/service/internal/telemetrylogs"
+	"go.opentelemetry.io/collector/service/pkg"
+	"go.opentelemetry.io/collector/service/pkg/extensions"
+	"go.opentelemetry.io/collector/service/pkg/pipelines"
+	"go.opentelemetry.io/collector/service/pkg/telemetrylogs"
 )
 
 // service represents the implementation of a component.Host.
@@ -44,7 +44,7 @@ func newService(set *settings) (*service, error) {
 		telemetry: component.TelemetrySettings{
 			TracerProvider: sdktrace.NewTracerProvider(
 				// needed for supporting the zpages extension
-				sdktrace.WithSampler(internal.AlwaysRecord()),
+				sdktrace.WithSampler(pkg.AlwaysRecord()),
 			),
 			MeterProvider: nonrecording.NewNoopMeterProvider(),
 			MetricsLevel:  set.Config.Telemetry.Metrics.Level,
